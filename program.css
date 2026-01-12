@@ -1,0 +1,311 @@
+/* 1. GLOBAL & BACKGROUND */
+.program-body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.85)), 
+                url('https://i.pinimg.com/736x/26/cf/0e/26cf0ebcd73f395eeb4ea0fb4a5bc357.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #0b0f19;
+    overflow-x: hidden;
+}
+
+.program-wrapper {
+    padding: 160px 8% 100px;
+}
+
+/* 2. HEADER SECTION */
+.header-section {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.header-section h1 { 
+    font-size: 3.5rem; 
+    font-weight: 700; 
+    margin: 10px 0; 
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5); 
+}
+
+/* GRADIENT KHAS UNTUK ACADEMIC EXCELLENCE & PREMIER? */
+.header-section h1 span, 
+.header-section h2 span { 
+    background: linear-gradient(90deg, #6df0ff, #c77dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.header-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.header-section p { 
+    color: #cbd5e1; 
+    font-size: 1.1rem; 
+    max-width: 650px; 
+    margin: 0 auto; 
+}
+
+/* 3. DUAL POSTER SECTION */
+.featured-poster-container { 
+    display: flex; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-bottom: 80px; 
+    flex-wrap: wrap; 
+}
+
+.poster-preview { 
+    position: relative;
+    flex: 1;
+    max-width: 450px;
+    min-width: 300px;
+    border-radius: 24px; 
+    overflow: hidden; 
+    box-shadow: 0 25px 50px rgba(0,0,0,0.7); 
+    border: 2px solid rgba(255,255,255,0.1);
+    transition: 0.4s ease;
+}
+
+.poster-preview:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #6366f1;
+    box-shadow: 0 30px 60px rgba(99, 102, 241, 0.3);
+}
+
+.poster-preview img { 
+    width: 100%; 
+    display: block; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.poster-overlay-text { 
+    position: absolute; 
+    bottom: 0; 
+    width: 100%; 
+    padding: 15px; 
+    background: rgba(15, 23, 42, 0.9); 
+    text-align: center; 
+    font-size: 0.85rem; 
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* 4. GRID & GLASSMORPHISM CARDS */
+.program-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 35px; 
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-img {
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: 0.6s ease;
+}
+
+.card:hover .card-img {
+    transform: scale(1.1);
+}
+
+.card-content {
+    padding: 30px;
+    background: rgba(11, 15, 25, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.card:hover {
+    transform: translateY(-15px);
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #6366f1;
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.4);
+}
+
+.card h3 { 
+    font-size: 1.2rem; 
+    color: #fff; 
+    margin-bottom: 12px; 
+    font-weight: 700; 
+    text-transform: uppercase; 
+    letter-spacing: 1px; 
+}
+
+.card p { 
+    color: #cbd5e1; 
+    font-size: 0.9rem; 
+    margin-bottom: 25px; 
+    line-height: 1.6; 
+}
+
+/* 5. REGISTER BUTTON */
+.reg-btn {
+    text-decoration: none; 
+    background: linear-gradient(135deg, #6366f1, #a855f7); 
+    color: #fff; 
+    padding: 14px; 
+    border-radius: 12px;
+    text-align: center; 
+    font-weight: 700; 
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+    transition: 0.3s ease;
+}
+
+.reg-btn:hover { 
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6); 
+}
+
+/* ===== MAIN FOOTER STYLES ===== */
+.main-footer {
+    background: #0b0f19; /* Deep dark blue to match your theme */
+    padding: 80px 8% 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+/* Brand Section */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.footer-logo span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.footer-logo .accent {
+    color: #6366f1; /* Your signature purple/blue color */
+}
+
+.footer-brand p {
+    color: #94a3b8;
+    line-height: 1.8;
+    max-width: 380px;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.footer-contact h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* Purple underline accent */
+.footer-contact h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 3px;
+    background: #6366f1;
+    border-radius: 2px;
+}
+
+.footer-contact p {
+    color: #94a3b8;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-contact p span {
+    color: #6366f1;
+    font-size: 1.1rem;
+}
+
+.footer-contact p:hover {
+    color: #ffffff;
+    transform: translateX(5px); /* Subtle slide effect on hover */
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+    padding-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 60px 5% 30px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-contact h3::after {
+        justify-content: center;
+    }
+
+    .footer-contact h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) { 
+    .header-section h1 { font-size: 2.5rem; }
+    .header-section h2 { font-size: 2rem; }
+    .program-wrapper { padding-top: 120px; }
+    .featured-poster-container { flex-direction: column; align-items: center; }
+}

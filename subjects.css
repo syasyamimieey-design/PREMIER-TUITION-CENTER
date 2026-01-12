@@ -1,0 +1,253 @@
+/* ===== SUBJECTS PAGE THEME ===== */
+.subjects-body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(rgba(11, 15, 25, 0.85), rgba(11, 15, 25, 0.85)), 
+                url('https://i.pinimg.com/1200x/18/82/43/1882434178b8479992cbf8487514ce9a.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.subjects-wrapper {
+    padding: 160px 8% 100px;
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-title h1 {
+    font-size: 3.5rem;
+    margin: 15px 0;
+    font-weight: 700;
+}
+
+/* KESAN GRADIENT SEPERTI PAGE FEEDBACK */
+.page-title h1 span {
+    background: linear-gradient(90deg, #6df0ff, #c77dff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.page-title p {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+}
+
+/* SUBJECTS GRID LAYOUT */
+.subjects-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.subject-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 40px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.subject-card:hover {
+    transform: translateX(15px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #6366f1;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-header h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register-btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    color: #fff !important;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+.register-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(99, 102, 241, 0.5);
+}
+
+.subjects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.subjects-list span {
+    background: rgba(15, 23, 42, 0.5);
+    padding: 10px 20px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+}
+
+.subjects-list span:hover {
+    background: rgba(99, 102, 241, 0.2);
+    color: #fff;
+    border-color: #818cf8;
+    transform: translateY(-2px);
+}
+
+/* ===== MAIN FOOTER STYLES ===== */
+.main-footer {
+    background: #0b0f19; /* Deep dark blue to match your theme */
+    padding: 80px 8% 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px;
+    margin-bottom: 50px;
+}
+
+/* Brand Section */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.footer-logo span {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.footer-logo .accent {
+    color: #6366f1; /* Your signature purple/blue color */
+}
+
+.footer-brand p {
+    color: #94a3b8;
+    line-height: 1.8;
+    max-width: 380px;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.footer-contact h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+/* Purple underline accent */
+.footer-contact h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 45px;
+    height: 3px;
+    background: #6366f1;
+    border-radius: 2px;
+}
+
+.footer-contact p {
+    color: #94a3b8;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.footer-contact p span {
+    color: #6366f1;
+    font-size: 1.1rem;
+}
+
+.footer-contact p:hover {
+    color: #ffffff;
+    transform: translateX(5px); /* Subtle slide effect on hover */
+}
+
+/* Bottom Copyright Bar */
+.footer-bottom {
+    padding-top: 35px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #64748b;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-footer {
+        padding: 60px 5% 30px;
+    }
+    
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer-logo, .footer-contact h3::after {
+        justify-content: center;
+    }
+
+    .footer-contact h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-contact p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title h1 { font-size: 2.5rem; }
+    .subjects-wrapper { padding-top: 120px; }
+    .subject-card { padding: 30px 20px; }
+}
